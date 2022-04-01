@@ -36,10 +36,13 @@ def main():
             batteryName = "pseudoDIEHARDFile.c"
         if choice == "8":
             batteryName = "NISTFile.c"
+        if choice == "Q":
+            break
+        if choice = "q":
+            break
         
         if batteryName != "":
-            print("Please type the file name including full file path and extension (if the file is in the same directory as 'TestU01Package.py',")
-            print("you only need to enter the file name and extension)")
+            print("Please type the file name including full file path and extension (if the file is in the same directory as 'TestU01Package.py', you only need to enter the file name and extension)")
             fileName = input()
             if exists(fileName):
                 print("---------Start---------")
