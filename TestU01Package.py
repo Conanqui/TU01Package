@@ -38,7 +38,7 @@ def main():
             batteryName = "NISTFile.c"
         if choice == "Q":
             break
-        if choice = "q":
+        if choice == "q":
             break
         
         if batteryName != "":
