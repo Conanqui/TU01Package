@@ -16,6 +16,7 @@ def main():
         print("Enter 6 for BlockAlphabit test battery")
         print("Enter 7 for pseudoDIEHARD test battery")
         print("Enter 8 for NIST test battery")
+        print("Enter 9 to run your own file (Advanced)")
         print("Enter Q to quit")
         
         choice = input()
@@ -36,6 +37,12 @@ def main():
             batteryName = "pseudoDIEHARDFile.c"
         if choice == "8":
             batteryName = "NISTFile.c"
+        if choice == "9":
+            print("Please type the file name including full file path and extension (if the file is in the same directory as 'TestU01Package.py', you only need to enter the file name and extension)")
+            cName = input()
+            if exists(cName):
+                subprocess.call(["gcc", cName, "-ltestu01", "-lprobdist", "-lmylib", "-lm"])
+                subprocess.call(["./a.out"])
         if choice == "Q":
             break
         if choice == "q":
