@@ -4,8 +4,5 @@
 
 int main (int argc, char *argv[])
 {
-	unif01_Gen *gen1;
-	gen1 = ufile_CreateReadText (argv[1], 1);
-	bbattery_SmallCrush(gen1);
-	ufile_DeleteReadText(gen1);
+	bbattery_SmallCrushFile(argv[1]);
 }
